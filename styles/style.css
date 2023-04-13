@@ -1,148 +1,3 @@
-/* 
-
---- 01 Typography System
-
--Font sizes(px):
-10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 44 / 52 / 62 / 74 / 86 / 98 
-
-Font weights:
-Default: 400
-Medium: 500
-Semi-bold: 600
-Bold: 700
-
-Line heights:
-Default: 1
-Small: 1.05
-Paragaph default: 1.6
-
-Spacing System (px):
-2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
-
-
---- 02 COLORS
-
--Primary: #e67e22
-- Tints:
-- Shades: 
-- Accents: 
-- Greys: 
-#555
-#333
-
---- 05 SHADOWS
-
---- 06 BORDER-RADIUS
-Default: 9px
-fHE
---- 07 WHITESPACE f
-
-
-*/
-
-
-*{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-html{
-  font-size: 62.5%;
-}
-
-body{
-  font-family: "Rubik", sans-serif;
-  line-height: 1;
-  font-weight: 400;
-  color: #555;
-}
-
-.test{
-  /* width: 1000px; */
-  /* max-width: 1000px; */
-  max-width: 500rem;
-  background-color: red;
-  padding: 100px;
-}
-
-/******************************/
-/* GENERAL REUSABLE COMPONENTS */
-/******************************/
-
-.container{
-  max-width: 120rem;
-  padding: 0 3.2rem;
-  margin: 0 auto;
-}
-
-.grid {
-  display: grid;
-  gap: 9.6rem;
-}
-
-.grid--2-cols{
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.grid--3-cols{
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.heading-primary{
-  font-size: 5.2rem;
-  font-weight: 700;
-  line-height: 1.05;
-  columns: #333;
-  letter-spacing: -0.5px;
-  margin-bottom: 3.2rem;
-}
-
-.btn:link, .btn:visited{
-  display: inline-block;
-
-  text-decoration: none;
-  background-color: #e67e22;
-  font-size: 2rem;
-  font-weight: 600;
-  padding: 1.6rem 3.2rem;
-  border-radius: 9px;
-
-  /* Putting transition on the original rule */
-  transition: background-color .3s;
-}
-
-.btn--full:link, 
-.btn--full:visited{
-  background-color: #e67e22;
-  color: #fff;
-}
-
-.btn--full:hover, 
-.btn--full:active{
-  background-color: #cf711f; 
-}
-
-.btn--outline:link, 
-.btn--outlinell:visited{
-  background-color: #fff;
-  color: #555;
-}
-
-.btn--outline:hover, 
-.btn--outlinell:active{
-  background-color: #fdf2e9;
-
-  /* Adds border without making layout 'jump' */
-  box-shadow: inset 0 0 0 3px #fff;
-
-}
-
-.margin-right-sm{
-  margin-right: 1.6rem !important;
-}
-
-
 /******************************/
 /* HEADER */
 /******************************/
@@ -270,7 +125,35 @@ body{
 
 .section-how{
   padding:  9.6rem 0;
-  background-color: orangered;
+  /* background-color: ; */
 }
+
+.step-number{
+  font-size: 8.6rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.step-img-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.step-img{
+  width: 40%;
+}
+
+.step-description{
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+
+.step-text-box{}
+
+
+
+
 
 
